@@ -1,2 +1,2 @@
-# MironVeacealvCV
-MironVeaceslavCV
+# MironVeacealv/CV
+MironVeaceslav/CV
