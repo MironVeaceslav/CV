@@ -31,7 +31,7 @@
       line-height: 1.6;
     }
 
-     /* Header Styles */
+    /* Header Styles */
     header {
       background: linear-gradient(135deg, var(--primary), var(--secondary));
       color: white;
@@ -83,11 +83,9 @@
 
     .profile-img {
       width: 220px;
-      /* Увеличено с 150px */
-      height: 150x;
-      /* Увеличено с 150px */
+      height: 220px;
       border-radius: 50%;
-      object-fit:cover;
+      object-fit: cover;
       border: 5px solid white;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
       margin-bottom: 1.5rem;
@@ -133,7 +131,6 @@
       color: var(--primary);
       transform: translateY(-3px);
     }
-
 
     /* Main Content */
     .container {
@@ -405,7 +402,7 @@
 <body>
   <header>
     <div class="language-switcher">
-       <button class="lang-btn" data-lang="ro">RO</button>
+      <button class="lang-btn" data-lang="ro">RO</button>
       <button class="lang-btn" data-lang="ru">RU</button>
       <button class="lang-btn active" data-lang="en">EN</button>
     </div>
@@ -434,7 +431,6 @@
 
   <div class="container">
     <div class="grid">
-      <!-- About Me -->
       <div class="card">
         <h2 id="about_title">About Me</h2>
         <p id="about_text">Experienced IT professional with skills in Linux administration, server configuration
@@ -443,7 +439,6 @@
           procurement and IT infrastructure.</p>
       </div>
       
-      <!-- Contact Info -->
       <div class="card">
         <h2 id="contact_title">Contact Information</h2>
         <div class="contact-info">
@@ -476,7 +471,6 @@
     </div>
 
     <div class="grid">
-      <!-- Skills -->
       <div class="card">
         <h2 id="skills_title">Technical Skills</h2>
         <div class="skills-container">
@@ -515,7 +509,6 @@
         </div>
       </div>
 
-      <!-- Experience -->
       <div class="card">
         <h2 id="experience_title">Work Experience</h2>
         <div class="timeline">
@@ -545,7 +538,6 @@
     </div>
 
     <div class="grid">
-      <!-- Education -->
       <div class="card">
         <h2 id="education_title">Education</h2>
         <div class="timeline">
@@ -561,7 +553,7 @@
         </div>
 
         <h2 style="margin-top: 1.5rem;" id="certifications_title">Certifications</h2>
-        <ul style="list-style-type: none;">
+        <ul style="list-style-type: none; margin-bottom: 1.5rem;">
           <li style="margin-bottom: 0.5rem;"><i class="fas fa-certificate"
               style="color: var(--accent); margin-right: 0.5rem;"></i> <span id="cert4">Psychology(Certified)</span></li>
           <li style="margin-bottom: 0.5rem;"><i class="fas fa-certificate"
@@ -570,9 +562,12 @@
               style="color: var(--accent); margin-right: 0.5rem;"></i> <span id="cert6">Bulgarian Language
               (Certified)</span></li>
         </ul>
+
+        <div style="display: flex; justify-content: center; margin-top: 1rem; background: #f8f9fa; padding: 10px; border-radius: 8px;">
+          <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="6a28d83e-2c7d-4f64-8f56-9e1a9458babc" data-share-badge-host="https://www.credly.com"></div>
+        </div>
       </div>
 
-      <!-- Languages -->
       <div class="card">
         <h2 id="languages_title">Languages</h2>
         <div class="progress-container">
@@ -633,7 +628,8 @@
   <div class="back-to-top">
     <i class="fas fa-arrow-up"></i>
   </div>
-  <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="6a28d83e-2c7d-4f64-8f56-9e1a9458babc" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
+  <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
   <script>
     // Translations
     const translations = {
@@ -685,7 +681,6 @@
         "cert4": "Psychology(Certified)",
         "cert5": "Pedagogy (Certified)",
         "cert6": "Bulgarian Language (Certified)",
-        
         "languages_title": "Languages",
         "lang1_name": "Russian",
         "lang1_level": "Native (Certified)",
@@ -707,10 +702,10 @@
         "footer_text": "© 2023 Miron Veaceslav. All rights reserved."
       },
       ru: {
-        "name": "Мирон Веачеслав",
-        "subtitle": "IT Администратор и Менеджер",
+        "name": "Мирон Вечеслав",
+        "subtitle": "IT Administrator & Manager",
         "about_title": "Обо мне",
-        "about_text": "Опытный IT-специалист с навыками администрирования Linux/Windows,(настройки серверов и сетевого оборудования). Обладаю знаниями в области виртуализации,оптимизации систем и кибербезопасности (в настоящее время прохожу сертификацию Cisco). Имею опыт управления командами (до 12 человек) в сфере Закупок и IT-инфраструктуры.",
+        "about_text": "Опытный IT-специалист с навыками администрирования Linux/Windows (настройки серверов и сетевого оборудования). Обладаю знаниями в области виртуализации, оптимизации систем и кибербезопасности (в настоящее время прохожу сертификацию Cisco). Имею опыт управления командами (до 12 человек) в сфере Закупок и IT-инфраструктуры.",
         "contact_title": "Контактная информация",
         "contact_phone": "+373 60 376 717",
         "contact_email": "slavikmiron95@gmail.com",
@@ -724,7 +719,7 @@
         "skill_database": "Базы данных",
         "skill_office": "Офисные программы",
         "skill_ai": "ИИ инструменты",
-        "skill_design": "Графический дизайн",
+        "skill_design": "Graphic Design",
         "skill_web": "Веб-разработка",
         "skill_hardware": "Железо",
         "skill_iptv": "IPTV",
@@ -754,7 +749,6 @@
         "cert4": "Психология (Сертифицирован)",
         "cert5": "Педагогика (Сертифицирован)",
         "cert6": "Болгарский язык (Сертифицирован)",
-        
         "languages_title": "Языки",
         "lang1_name": "Русский",
         "lang1_level": "Родной (Сертифицирован)",
@@ -773,7 +767,7 @@
         "quality4": "Быстрое обучение",
         "quality5": "Решение проблем",
         "quality6": "Внимание к деталям",
-        "footer_text": "© 2023 Мирон Вяачеслав. Все права защищены."
+        "footer_text": "© 2023 Мирон Вячеслав. Все права защищены."
       },
       ro: {
         "name": "Miron Veaceslav",
@@ -808,7 +802,7 @@
         "experience_title": "Experiență profesională",
         "exp1_title": "Lider de echipă",
         "exp1_company": "Intel (Instalare camere sterile)",
-        "exp1_desc": "Am condus o echipă de 6 persoane, am instalat și configurat camere sterile pentru Intel. Responsabil de configurarea tehnică și coordonarea echipei.",
+        "exp1_desc": "Am condus o echipă de 6 persoane, am instalat și configurat camere sterile pentru Intel. Responsabil de configurarea tehnică și coordonarea echipelor.",
         "exp2_title": "Manager achiziții",
         "exp2_company": "Distribuție materii prime",
         "exp2_desc": "Am condus o echipă de 12 angajați în achiziții și distribuție de materii prime. Am gestionat operațiunile din lanțul de aprovizionare și performanța echipei.",
@@ -823,7 +817,6 @@
         "cert4": "Psihologie (Certificat)",
         "cert5": "Pedagogie (Certificat)",
         "cert6": "Limba Bulgară (Certificat)",
-        
         "languages_title": "Limbi",
         "lang1_name": "Rusă",
         "lang1_level": "Nativ (Certificat)",
@@ -869,23 +862,31 @@
         });
       });
 
-      // Set initial language based on browser preference
+      // Set initial language safely
       const userLang = navigator.language.substring(0, 2);
-      if (userLang === 'ru' || userLang === 'ro') {
-        document.querySelector(`.lang-btn[data-lang="${userLang}"]`).click();
+      const initialBtn = document.querySelector(`.lang-btn[data-lang="${userLang}"]`);
+      if (initialBtn) {
+        initialBtn.click();
+      } else {
+        setLanguage('en');
       }
     });
 
     // Back to top button
     window.addEventListener('scroll', function() {
       const backToTop = document.querySelector('.back-to-top');
-      backToTop.classList.toggle('active', window.pageYOffset > 300);
+      if (backToTop) {
+        backToTop.classList.toggle('active', window.pageYOffset > 300);
+      }
     });
 
-    document.querySelector('.back-to-top').addEventListener('click', function(e) {
-      e.preventDefault();
-      window.scrollTo({top: 0, behavior: 'smooth'});
-    });
+    const backToTopBtn = document.querySelector('.back-to-top');
+    if (backToTopBtn) {
+      backToTopBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({top: 0, behavior: 'smooth'});
+      });
+    }
   </script>
 </body>
 
