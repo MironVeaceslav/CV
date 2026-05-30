@@ -373,6 +373,10 @@
       justify-content: center;
       align-items: center;
       transition: var(--transition);
+      
+      /* Новые свойства для предотвращения слитности бейджей */
+      gap: 16px;           /* Расстояние между бейджами */
+      flex-wrap: wrap;     /* Перенос на новую строку при нехватке места */
     }
     
     .badge-frame:hover {
@@ -666,17 +670,18 @@
   </div>
 
   <footer>
-    <div class="badge-wrapper">
-      <div class="badge-container">
-        <p class="badge-instruction" id="badge_instruction">These digital badges verify my professional competencies in the respective fields. Click on the badge to review my certified credentials and validation details.</p>
-        <div class="badge-frame">
-          <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="6a28d83e-2c7d-4f64-8f56-9e1a9458babc" data-share-badge-host="https://www.credly.com"></div>
-          <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="94123120-663c-4cc7-897c-90aa46b97ba8" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-        </div>
+  <div class="badge-wrapper">
+    <div class="badge-container">
+      <p class="badge-instruction" id="badge_instruction">These digital badges verify my professional competencies in the respective fields. Click on the badge to review my certified credentials and validation details.</p>
+      <div class="badge-frame" style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="6a28d83e-2c7d-4f64-8f56-9e1a9458babc" data-share-badge-host="https://www.credly.com"></div>
+        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="94123120-663c-4cc7-897c-90aa46b97ba8" data-share-badge-host="https://www.credly.com"></div>
+        <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
       </div>
     </div>
-    <p id="footer_text">© 2023 Miron Veaceslav. All rights reserved.</p>
-  </footer>
+  </div>
+  <p id="footer_text">© 2023 Miron Veaceslav. All rights reserved.</p>
+</footer>
 
   <div class="back-to-top">
     <i class="fas fa-arrow-up"></i>
